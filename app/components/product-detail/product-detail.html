@@ -1,0 +1,68 @@
+<div *ngIf="product">
+    <div class="row" style="margin-bottom: 20px;">
+        <div class="col-md-12">
+            <strong>Home</strong> > <big>{{product.name}}</big>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <img [src]="product.bigImage">
+            </div>
+        </div>
+        <div class="col-md-8">
+            <table class="productInfo">
+                <tr>
+                    <td>
+                        Product code : {{product.code}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Availability : {{product.availability}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Price : {{product.price}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Quantity :
+                    </td>
+                    <td>
+                        <select [(ngModel)]="selectedQuantity">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn btn-primary" type="button" (click)="addToCart()">
+                            Add to cart {{selectedQuantity}}
+                        </button>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <div class="alert alert-success" role="alert" *ngIf="addedToCart">
+                Successfully been added to the cart {{selectedQuantity}} <strong>{{product.name}}</strong>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active">
+                    <a>Description</a>
+                </li>
+            </ul>
+            {{product.description}}
+        </div>
+    </div>
+</div>
