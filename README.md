@@ -2,7 +2,7 @@
 
 You think all those "First Angular component" examples are oversimplified? You are looking for a real-ish Angular2 demo with components everywhere? Check this Angular2 Shop POC developed using RC1 version.
 
-It's actually a rewrite of the already refactored [jQuery to AngularJS Shop Kata](https://github.com/ngMorocco/meetup-1-kata-Comment-manger-des-spaghetti-jQuery-avec-les-baguettes-magiques-Angular) exercised during during the 1st [ngMorocco](http://ngmorocco.org/) Meetup. 
+It's actually a rewrite of the already refactored [jQuery to AngularJS Shop Kata](https://github.com/ngMorocco/meetup-1-kata-Comment-manger-des-spaghetti-jQuery-avec-les-baguettes-magiques-Angular) exercised during the 1st [ngMorocco](http://ngmorocco.org/) Meetup. 
 
 # Installation
 
